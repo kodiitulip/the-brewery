@@ -1,0 +1,39 @@
+{
+	"schemaVersion": 1,
+	"id": "brewery",
+	"version": "${version}",
+	"name": "The Brewery",
+	"description": "Tis Time for Brewering!",
+	"authors": [
+		"ItsKodiee"
+	],
+	"contact": {
+		"homepage": "null"
+	},
+	"license": "MIT",
+	"icon": "assets/brewery/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"kodie.brewery.TheBrewery"
+		],
+		"client": [
+			"kodie.brewery.TheBreweryClient"
+		],
+		"fabric-datagen": [
+			"kodie.brewery.TheBreweryDataGenerator"
+		]
+	},
+	"mixins": [
+		"brewery.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.2",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

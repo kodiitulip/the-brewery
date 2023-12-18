@@ -1,0 +1,6 @@
+{
+  "parent": "item/genrated",
+  "textures": {
+    "layer0": "brewery:item/barley"
+  }
+}

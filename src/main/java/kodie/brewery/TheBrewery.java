@@ -1,5 +1,6 @@
 package kodie.brewery;
 
+import kodie.brewery.item.AllModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -12,5 +13,6 @@ public class TheBrewery implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		LOGGER.info("Heya Partner! Ready to brew some beers?");
+		AllModItems.registerModItems();
 	}
 }
